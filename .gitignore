@@ -1,0 +1,28 @@
+# Dependencies & vendor
+vendor/
+node_modules/
+
+# Uploaded user content (photos of students/teachers are private)
+uploads/*
+!uploads/*/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Local database dumps (may contain real data)
+database/websekolah_*.sql
+*.sql.bak
+
+# Environment & secrets
+.env
+.env.*
+config/*local*.php
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/

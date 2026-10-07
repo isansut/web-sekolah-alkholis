@@ -1,0 +1,187 @@
+/* =====================================================
+   IMAGE OPTIMIZATION FOR SMA AL-KHOLIS WEBSITE
+   ===================================================== */
+
+/* =====================================================
+   BERITA PAGE IMAGE OPTIMIZATION
+   ===================================================== */
+
+.berita-card .card-img-top {
+    height: 180px !important;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.berita-card .card-img-top:hover {
+    transform: scale(1.02);
+}
+
+/* Berita detail page */
+.berita-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    margin: 0 auto;
+    display: block;
+}
+
+/* =====================================================
+   PENGUMUMAN PAGE IMAGE OPTIMIZATION
+   ===================================================== */
+
+.pengumuman-card .card-img-top {
+    height: 160px !important;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.pengumuman-card .card-img-top:hover {
+    transform: scale(1.02);
+}
+
+/* =====================================================
+   KARYA SISWA PAGE IMAGE OPTIMIZATION
+   ===================================================== */
+
+.karya-card .card-img-top {
+    height: 200px !important;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.karya-card .card-img-top:hover {
+    transform: scale(1.02);
+}
+
+/* Karya detail modal */
+.karya-modal .modal-body img {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: contain;
+    border-radius: var(--border-radius);
+    margin: 0 auto;
+    display: block;
+}
+
+/* =====================================================
+   GALLERY PAGE IMAGE OPTIMIZATION
+   ===================================================== */
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* =====================================================
+   RESPONSIVE IMAGE SIZES
+   ===================================================== */
+
+@media (max-width: 768px) {
+    .berita-card .card-img-top {
+        height: 140px !important;
+    }
+    
+    .pengumuman-card .card-img-top {
+        height: 120px !important;
+    }
+    
+    .karya-card .card-img-top {
+        height: 160px !important;
+    }
+    
+    .berita-image img {
+        max-height: 300px;
+    }
+    
+    .karya-modal .modal-body img {
+        max-height: 250px;
+    }
+    
+    .gallery-item img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .berita-card .card-img-top {
+        height: 120px !important;
+    }
+    
+    .pengumuman-card .card-img-top {
+        height: 100px !important;
+    }
+    
+    .karya-card .card-img-top {
+        height: 140px !important;
+    }
+    
+    .berita-image img {
+        max-height: 250px;
+    }
+    
+    .karya-modal .modal-body img {
+        max-height: 200px;
+    }
+    
+    .gallery-item img {
+        height: 180px;
+    }
+}
+
+/* =====================================================
+   IMAGE LOADING OPTIMIZATION
+   ===================================================== */
+
+.card-img-top {
+    background-color: #f8f9fa;
+    background-image: linear-gradient(45deg, #f1f3f4 25%, transparent 25%), 
+                      linear-gradient(-45deg, #f1f3f4 25%, transparent 25%), 
+                      linear-gradient(45deg, transparent 75%, #f1f3f4 75%), 
+                      linear-gradient(-45deg, transparent 75%, #f1f3f4 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.card-img-top[src] {
+    background: none;
+}
+
+/* =====================================================
+   IMAGE QUALITY OPTIMIZATION
+   ===================================================== */
+
+.card-img-top {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+/* =====================================================
+   ACCESSIBILITY IMPROVEMENTS
+   ===================================================== */
+
+.card-img-top {
+    alt: attr(alt);
+}
+
+.card-img-top:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+} 
